@@ -1,2 +1,2 @@
 # json-derulo
-A Python tool for converting JSON payloads into Swift or Java models.
+A command line tool for converting JSON payloads into Swift or Java models.
