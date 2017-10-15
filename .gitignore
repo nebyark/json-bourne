@@ -1,2 +1,3 @@
+*.swift
 *.json
 __pycache__
