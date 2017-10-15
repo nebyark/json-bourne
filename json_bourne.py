@@ -3,7 +3,7 @@ from swift_writer import SwiftWriter
 import sys, getopt
 
 def usage():
-    print('usage: json_derulo.py [-r <root class name>] [-f <file name>] [-a <author name>] [-c <company name>]')
+    print('usage: json_bourne.py [-r <root class name>] [-f <file name>] [-a <author name>] [-c <company name>]')
 
 def main(argv):
     # Get arguments
@@ -16,7 +16,7 @@ def main(argv):
 
     json_file = None
     root_name = ''
-    author = 'JSON Derulo'
+    author = 'JSON Bourne'
     company = ''
 
     for opt, arg in opt_list:
