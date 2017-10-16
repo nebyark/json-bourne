@@ -24,7 +24,7 @@ class SwiftWriter:
                 assignment = ''
                 if prop.is_list:
                     if prop.data_type.is_primitive:
-                        assignment = 'if let items = json["' + prop.json_field_name + '"] as? [' + prop.data_type.type_name + '] { ' + prop.name + ' = items.flatMap { $0 } }'
+                        assignment = 'if let items = json["' + prop.json_field_name + '"] as? [' + prop.data_type.type_name + '] { ' + prop.name + ' = items.map { $0 } }'
                     else:
                         assignment = 'if let items = json["' + prop.json_field_name + '"] as? [[String: Any]] { ' + prop.name + ' = items.map { ' + prop.data_type.type_name + '(json: $0) } }'
                 else:
