@@ -1,6 +1,6 @@
 # json-bourne
 ![alt text](https://i.imgur.com/8LnmYEn.jpg)
-The CIA's most dangerous JSON payload to model file tool.
+The CIA's most dangerous JSON payload to model file tool. At the moment, only Swift classes are supported.
 
 ## Requirements
 * Python 3.x
