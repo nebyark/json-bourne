@@ -41,7 +41,7 @@ def main(argv):
         sys.exit(2)
 
     # Start parse
-    if language == 'Swift':
+    if language.lower() == 'swift':
         p = Parser(root_name=root_name)
         models = p.parse_json_file(json_file)
         swift_writer = SwiftWriter(author=author, company=company)

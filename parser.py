@@ -35,7 +35,9 @@ class DataType:
         elif 'class \'int\'' in type_name:
             self.type_name = 'Int'
         elif 'class \'float\'' in type_name:
-            self.type_name = 'Float'            
+            self.type_name = 'Float'
+        elif 'class \'bool\'' in type_name:
+            self.type_name = 'Bool'
         else:
             self.is_primitive = False
             self.type_name = convert_case(type_name, toPascal=True)
